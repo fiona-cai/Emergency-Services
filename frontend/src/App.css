@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
   background-color: white;
   overflow: hidden;
@@ -11,18 +13,29 @@ body{
 
 .location{
   position: absolute;
-  top: 650px;
-  left: 25px;
+  top: 655px;
+  left: 20px;
   width: 39px;
   height: 39px;
+  z-index: 1;
 }
 
 .settings{
   position: absolute;
-  top: 715px;
-  left: 25px;
+  top: 595px;
+  left: 20px;
   width: 39px;
   height: 39px;
+  z-index: 1;
+}
+
+.exit{
+  position: absolute;
+  top: 715px;
+  left: 30px;
+  width: 28px;
+  height: 28px;
+  z-index: 1;
 }
 
 .wave{
@@ -30,38 +43,52 @@ body{
   left: 87px;
   top: 0;
   width: 1200px;
+  z-index: -1;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-h1 {
+.title {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 72px;
   letter-spacing: -1.5%;
   line-height: 50px;
+  margin: 125px 50px 50px 90px;
 }
 
-p {
+.title2 {
   font-family: 'Inter', sans-serif;
-  font-size: 30px;
+  font-size: 32px;
   letter-spacing: 0.5%;
   line-height: 10px;
   color: #717171;
+  margin: 0px 50px 30px 100px;
 }
 
-h2 {
+.subtitle {
   font-family: 'Inter', sans-serif;
-  font-size: 40px;
-  font-weight: normal;
-  margin-top: 150px;
+  font-size: 32px;
+  font-weight: 300;
   color: #717171;
   line-height: 0px;
+  margin: 50px 50px 0px 100px;
 }
 
-
-h3 {
+.transcription {
   font-family: 'Inter', sans-serif;
   font-size: 64px;
   font-weight: 300;
+  margin: 40px 50px 0px 100px;
+}
+
+.rootContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.rightContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1200px;
 }
