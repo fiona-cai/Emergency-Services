@@ -31,7 +31,7 @@ def record():
     # Records a message
     response = VoiceResponse()
 
-    response.say("Hello, please leave your message after the tone.")
+    response.say("Please state your emergency.")
     response.record(transcribe=True)
 
     # allow time for Twilio to process transcription
