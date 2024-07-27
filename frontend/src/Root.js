@@ -15,7 +15,7 @@ function Root() {
                 <p className="title2">Caller’s audio will be transcribed below.</p>
                 <p className="title2">We’ll give you the solution to their problem.</p>
                 <p className="subtitle">Transcription:</p>
-                <p className="transcription">“There’s a massive flood over in Waterloo University, me and 5 others are stuck in the Math 3 building, send help please!”</p>
+                <p className="transcription">“There’s a massive flood over in the University of Waterloo , me and 5 others are stuck in the Math 3 building, send help please!”</p>
             </div>
         </div>
         <img src={wave} alt="wave" className="wave"/>
