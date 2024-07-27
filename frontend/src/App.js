@@ -1,27 +1,16 @@
-// import React from 'react';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import HomePage from './components/HomePage';
-// import Dashboard from './components/Dashboard';
-
-// function App() {
-//   return (
-//     <Router>
-//       <Switch>
-//         <Route path="/" exact component={HomePage} />
-//         <Route path="/dashboard" component={Dashboard} />
-//       </Switch>
-//     </Router>
-//   );
-// }
-
-// export default App;
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Dashboard from "./Dashboard";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
 
 function App() {
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState('feiovewoi');
 
+  /*
   useEffect(() => {
     const testConnection = async () => {
       const response = await axios.get('http://localhost:5000/test');
@@ -30,11 +19,18 @@ function App() {
 
     testConnection();
   }, []);
+  */
+  const router = createBrowserRouter([
+    {
+      path: "/bbb",
+      element: <div>Hello world!</div>,
+    },
+  ]);
 
   return (
-    <div>
-      {message}
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 
