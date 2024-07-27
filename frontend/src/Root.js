@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Homepage() {
+function Root() {
   // display tasks here
   return (
     <div>
-      Homepage
+      Root
     </div>
   );
 }
 
-export default Homepage;
+export default Root;

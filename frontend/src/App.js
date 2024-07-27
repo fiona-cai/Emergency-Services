@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Dashboard from "./Dashboard";
-import Homepage from './Homepage';
+import Root from './Root';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -28,7 +28,7 @@ function App() {
     },
     {
       path: "/",
-      element: <Homepage/>,
+      element: <Root/>,
     },
   ]);
 
