@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Dashboard from "./Dashboard";
+import Overview from "./Overview";
 import Root from './Root';
+import Medical from './Medical';
+import Fire from './Fire';
+import Police from './Police';
 import './App.css';
 import {
   createBrowserRouter,
@@ -24,12 +27,24 @@ function App() {
   */
   const router = createBrowserRouter([
     {
-      path: "/Dashboard",
-      element: <Dashboard/>,
+      path: "/overview",
+      element: <Overview/>,
     },
     {
       path: "/",
       element: <Root/>,
+    },
+    {
+      path: "/medical",
+      element: <Medical/>,
+    },
+    {
+      path: "/fire",
+      element: <Fire/>,
+    },
+    {
+      path: "/police",
+      element: <Police/>,
     },
   ]);
 
