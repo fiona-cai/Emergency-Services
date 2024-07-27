@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Dashboard from "./Dashboard";
 import Root from './Root';
+import './App.css';
 import {
   createBrowserRouter,
   RouterProvider,

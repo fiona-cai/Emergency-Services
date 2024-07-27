@@ -1,0 +1,33 @@
+body{
+  background-color: white;
+  overflow: hidden;
+}
+
+.navbar{
+  background-color: #A7CBA8;
+  height: 100vh;
+  width: 87px;
+}
+
+.location{
+  position: absolute;
+  top: 650px;
+  left: 25px;
+  width: 39px;
+  height: 39px;
+}
+
+.settings{
+  position: absolute;
+  top: 715px;
+  left: 25px;
+  width: 39px;
+  height: 39px;
+}
+
+.wave{
+  position: absolute;
+  left: 87px;
+  top: 0;
+  width: 1200px;
+}
