@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Dashboard from "./Dashboard";
+import Homepage from './Homepage';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -22,8 +23,12 @@ function App() {
   */
   const router = createBrowserRouter([
     {
-      path: "/bbb",
-      element: <div>Hello world!</div>,
+      path: "/Dashboard",
+      element: <Dashboard/>,
+    },
+    {
+      path: "/",
+      element: <Homepage/>,
     },
   ]);
 
