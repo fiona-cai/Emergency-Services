@@ -1,4 +1,5 @@
 import React from 'react';
+import {useState} from 'react';
 import location from './location.png';
 import settings from './settings.png';
 import police from './police.png';
@@ -13,6 +14,10 @@ import minus from './Group 699.png';
 import exit from './exit.png';
 
 function Overview({data}) {
+  const [polices, setPolices] = useState(0);
+  const [fires, setFires] = useState(0);
+  const [medics, setMedics] = useState(0);
+
   // display tasks here
   return (
     <>
@@ -29,15 +34,15 @@ function Overview({data}) {
               <img src={health} alt="health" className="healthIcon" />
               <img src={yellow} alt="yellow" className="yellowIcon" />
               <img src={fire} alt="fire" className="fireIcon" />
-              <img src={add} alt="add" className="addIcon" />
-              <img src={minus} alt="minus" className="minusIcon" />
-              <img src={add} alt="add" className="addIcon2" />
-              <img src={minus} alt="minus" className="minusIcon2" />
-              <img src={add} alt="add" className="addIcon3" />
-              <img src={minus} alt="minus" className="minusIcon3" />
-              <h3 className='polices'>2</h3>
-              <h3 className='medics'>5</h3>
-              <h3 className='fires'>4</h3>
+              <img src={add} alt="add" className="addIcon" onClick={() => {setPolices(polices+1)}}/>
+              <img src={minus} alt="minus" className="minusIcon" onClick={() => {setPolices(polices-1)}}/>
+              <img src={add} alt="add" className="addIcon2" onClick={() => {setMedics(medics+1)}}/>
+              <img src={minus} alt="minus" className="minusIcon2" onClick={() => {setMedics(medics-1)}}/>
+              <img src={add} alt="add" className="addIcon3" onClick={() => {setFires(fires+1)}}/>
+              <img src={minus} alt="minus" className="minusIcon3" onClick={() => {setFires(fires-1)}}/>
+              <h3 className='polices'>{polices}</h3>
+              <h3 className='medics'>{medics}</h3>
+              <h3 className='fires'>{fires}</h3>
               <div className="Overview">
                 {Object.entries(data).map(([key, value]) => (
                   <p key={key}>{`${key}: ${value}`}</p>
