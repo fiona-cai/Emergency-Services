@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import Overview from "./Overview";
 import Root from './Root';
 import Medical from './Medical';
