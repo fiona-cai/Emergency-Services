@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Overview from "./Overview";
-import Root from './Root';
-import Medical from './Medical';
-import Fire from './Fire';
-import Police from './Police';
-import Success from './Success';
+import Login from "./Login.js";
 import './App.css';
 import {
   createBrowserRouter,
@@ -40,28 +35,8 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "/overview",
-      element: <Overview data={data}/>,
-    },
-    {
-      path: "/",
-      element: <Root data={data}/>,
-    },
-    {
-      path: "/medical",
-      element: <Medical data={data}/>,
-    },
-    {
-      path: "/fire",
-      element: <Fire data={data}/>,
-    },
-    {
-      path: "/police",
-      element: <Police data={data}/>,
-    },
-    {
-      path: "/success",
-      element: <Success/>,
+      path: "/login",
+      element: <Login data={data}/>,
     },
   ]);
 
