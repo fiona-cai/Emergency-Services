@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
 
 from twilio.twiml.voice_response import VoiceResponse
@@ -51,5 +51,33 @@ def record():
 def sendConfirmation():
     emit("display", {}, broadcast=True)
 
+<<<<<<< Updated upstream
+=======
+@app.route("/", methods=['GET'])
+def home():
+    return render_template("index.html")
+
+@app.route("/overview", methods=['GET'])
+def overview():
+    return render_template("overview.html")
+
+@app.route("/fire", methods=['GET'])
+def fire():
+    return render_template("fire.html")
+
+@app.route("/medical", methods=['GET'])
+def medical():
+    return render_template("medical.html")
+
+@app.route("/police", methods=['GET'])
+def police():
+    return render_template("police.html")
+
+@app.route("/success", methods=['GET'])
+def success():
+    return render_template("success.html")
+    
+
+>>>>>>> Stashed changes
 if __name__ == '__main__':
     app.run(port=5000)
