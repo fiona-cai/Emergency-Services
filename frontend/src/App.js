@@ -16,7 +16,7 @@ import socketIO from 'socket.io-client';
 const socket = socketIO.connect('http://localhost:5000');
 
 function App() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState({"iwerfdnweinfdes": "efindsin"});
   const [display, setDisplay] = useState(false);
 
 
