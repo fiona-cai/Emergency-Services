@@ -4,6 +4,7 @@ import Root from './Root';
 import Medical from './Medical';
 import Fire from './Fire';
 import Police from './Police';
+import Success from './Success';
 import './App.css';
 import {
   createBrowserRouter,
@@ -17,7 +18,7 @@ const socket = socketIO.connect('http://localhost:5000');
 function App() {
   const [data, setData] = useState(null);
   const [display, setDisplay] = useState(false);
-  
+
 
   // set data to received data (pass through props)
   useEffect(() => {
@@ -57,6 +58,10 @@ function App() {
     {
       path: "/police",
       element: <Police/>,
+    },
+    {
+      path: "/success",
+      element: <Success/>,
     },
   ]);
 

@@ -2,6 +2,8 @@ import React from 'react';
 import location from './location.png';
 import settings from './settings.png';
 import exit from './exit.png';
+import check from './check.png';
+import success from './success.png';
 
 function Success() {
   // display tasks here
@@ -9,10 +11,8 @@ function Success() {
     <>
         <div className="rootContainer">
             <div className="navbar"></div>
-            <div className="rightContainer">
-                <p className="title">Instructions</p>
-                <p className="title2">Based on the situation, here are some things you should do</p>
-            </div>
+            <img src={check} alt="check" className="check"/>
+            <img src={success} alt="success" className="success"/>
         </div>
         <img src={settings} alt="settings" className="settings"/>
         <img src={location} alt="location" className="location"/>
