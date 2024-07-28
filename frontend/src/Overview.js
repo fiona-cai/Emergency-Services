@@ -10,7 +10,7 @@ import fire from './hydrant.png';
 import yellow from './Ellipse 7.png';
 import minus from './Group 698.png';
 import add from './Group 699.png';
-
+import {Link} from "react-router-dom";
 import exit from './exit.png';
 
 function Overview({data}) {
@@ -50,9 +50,11 @@ function Overview({data}) {
               </div>
               </div>
             </div>
-            <button className="button button1" style={{width: 145, height: 50, paddingLeft: 32, paddingRight: 32, paddingTop: 12, paddingBottom: 12, borderRadius: 8, overflow: 'hidden', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex', bottom: '20px', right: '20px'}}>
-              <div className="ButtonCta" style={{color: '#FCFCFD', fontSize: 22, fontWeight: '500', letterSpacing: 0.28, wordWrap: 'break-word'}}>Confirm</div>
-            </button>
+            <Link to="/success">
+              <button className="button button1" style={{width: 145, height: 50, paddingLeft: 32, paddingRight: 32, paddingTop: 12, paddingBottom: 12, borderRadius: 8, overflow: 'hidden', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex', bottom: '20px', right: '20px'}}>
+                <div className="ButtonCta" style={{color: '#FCFCFD', fontSize: 22, fontWeight: '500', letterSpacing: 0.28, wordWrap: 'break-word'}}>Confirm</div>
+              </button>
+            </Link>
         </div>
         <img src={settings} alt="settings" className="settings"/>
         <img src={location} alt="location" className="location"/>
