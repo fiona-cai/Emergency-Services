@@ -268,3 +268,21 @@ body{
   width: 800px;
   height: 192px;
 }
+
+.ButtonCta {
+  font-family: "Inter";
+}
+
+.ButtonBase {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.ButtonBase :hover {
+  background: #7EBD80;
+}
+
+.ButtonCta :hover {
+  background: #7EBD80;
+}
