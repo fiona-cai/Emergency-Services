@@ -41,7 +41,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/overview",
-      element: <Overview/>,
+      element: <Overview data={data}/>,
     },
     {
       path: "/",
@@ -64,6 +64,9 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
+      <div className="App">
+        <Overview data={router} />
+      </div>
     </>
   );
 }

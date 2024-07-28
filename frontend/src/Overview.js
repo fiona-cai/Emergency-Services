@@ -12,7 +12,7 @@ import minus from './Group 699.png';
 
 import exit from './exit.png';
 
-function Overview() {
+function Overview({data}) {
   // display tasks here
   return (
     <>
@@ -38,6 +38,11 @@ function Overview() {
               <h3 className='polices'>2</h3>
               <h3 className='medics'>5</h3>
               <h3 className='fires'>4</h3>
+              <div className="Overview">
+                {Object.entries(data).map(([key, value]) => (
+                  <p key={key}>{`${key}: ${value}`}</p>
+                ))}
+              </div>
               </div>
             </div>
         </div>
