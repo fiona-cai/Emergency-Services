@@ -1,1 +1,1 @@
-export const URL = 'http://localhost:5000'; // set to undefined for production
+export const URL = undefined; //'http://localhost:5000'; // set to undefined for production
