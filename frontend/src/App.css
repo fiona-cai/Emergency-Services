@@ -92,3 +92,33 @@ body{
   justify-content: flex-start;
   width: 1200px;
 }
+
+.triangle{
+  position: absolute;
+  top: 0px;
+  left: 1050px;
+}
+
+.police{
+  position: absolute;
+  top: 20px;
+  left: 1210px;
+  width: 42px;
+  height: 48px;
+}
+
+.ambulance{
+  position: absolute;
+  top: 25px;
+  left: 1205px;
+  width: 45px;
+  height: 36px;
+}
+
+.hydrant{
+  position: absolute;
+  top: 20px;
+  left: 1210px;
+  width: 52px;
+  height: 52px;
+}
