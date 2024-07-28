@@ -7,6 +7,8 @@ import health from './ambulance.png';
 import red from './Ellipse 6.png';
 import fire from './hydrant.png';
 import yellow from './Ellipse 7.png';
+import add from './Group 698.png';
+import minus from './Group 699.png';
 
 import exit from './exit.png';
 
@@ -19,7 +21,6 @@ function Overview() {
             <div className="rightContainer">
               <p className="title">Emergency overview</p>
               <p className="title2">Here's a summary of the emergency.</p>
-              <p className="title2">We’ll give you the solution to their problem.</p>
 
               <div className='addminus'>
               <img src={blue} alt="blue" className="blueIcon" />
@@ -28,6 +29,15 @@ function Overview() {
               <img src={health} alt="health" className="healthIcon" />
               <img src={yellow} alt="yellow" className="yellowIcon" />
               <img src={fire} alt="fire" className="fireIcon" />
+              <img src={add} alt="add" className="addIcon" />
+              <img src={minus} alt="minus" className="minusIcon" />
+              <img src={add} alt="add" className="addIcon2" />
+              <img src={minus} alt="minus" className="minusIcon2" />
+              <img src={add} alt="add" className="addIcon3" />
+              <img src={minus} alt="minus" className="minusIcon3" />
+              <h3 className='polices'>2</h3>
+              <h3 className='medics'>5</h3>
+              <h3 className='fires'>4</h3>
               </div>
             </div>
         </div>

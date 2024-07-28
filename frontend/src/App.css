@@ -170,3 +170,72 @@ body{
   top: 320px;
   left: 818px;
 }	
+
+.minusIcon {
+  width: 25px;
+  position:absolute;
+  top: 474px;
+  left: 426px;
+}	
+
+.addIcon {
+  width: 25px;
+  position:absolute;
+  top: 474px;
+  left: 502px;
+}	
+
+.minusIcon2 {
+  width: 25px;
+  position:absolute;
+  top: 474px;
+  left: 632px;
+}	
+
+.addIcon2 {
+  width: 25px;
+  position:absolute;
+  top: 474px;
+  left: 708px;
+}	
+
+.minusIcon3 {
+  width: 25px;
+  position:absolute;
+  top: 474px;
+  left: 836px;
+}	
+
+.addIcon3 {
+  width: 25px;
+  position:absolute;
+  top: 474px;
+  left: 912px;
+}	
+
+.polices {
+  position:absolute;
+  top: 428px;
+  left: 466px;
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 400;
+}	
+
+.medics {
+  position:absolute;
+  top: 428px;
+  left: 672px;
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 400;
+}	
+
+.fires {
+  position:absolute;
+  top: 428px;
+  left: 876px;
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 400;
+}	
