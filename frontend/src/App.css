@@ -269,20 +269,29 @@ body{
   height: 192px;
 }
 
-.ButtonCta {
-  font-family: "Inter";
+.button {
+  background-color: #7EBD80; /* Green */
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
-.ButtonBase {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+
+.button1 {
+  background-color: black; 
+  color: white; 
+  border: 2px solid #7EBD80;
+  
 }
 
-.ButtonBase :hover {
-  background: #7EBD80;
-}
-
-.ButtonCta :hover {
-  background: #7EBD80;
+.button1:hover {
+  background-color: #7EBD80;
+  color: black;
 }

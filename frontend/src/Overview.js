@@ -8,8 +8,8 @@ import health from './ambulance.png';
 import red from './Ellipse 6.png';
 import fire from './hydrant.png';
 import yellow from './Ellipse 7.png';
-import add from './Group 698.png';
-import minus from './Group 699.png';
+import minus from './Group 698.png';
+import add from './Group 699.png';
 
 import exit from './exit.png';
 
@@ -50,8 +50,8 @@ function Overview({data}) {
               </div>
               </div>
             </div>
-            <button className="ButtonBase" style={{width: 145, height: 50, paddingLeft: 32, paddingRight: 32, paddingTop: 12, paddingBottom: 12, background: 'black', borderRadius: 8, overflow: 'hidden', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex'}}>
-              <div className="ButtonCta" style={{color: '#FCFCFD', fontSize: 22, fontWeight: '500', letterSpacing: 0.28, wordWrap: 'break-word'}}>Confirm</div>
+            <button className="button button1" style={{width: 145, height: 50, paddingLeft: 32, paddingRight: 32, paddingTop: 12, paddingBottom: 12, borderRadius: 8, overflow: 'hidden', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex'}}>
+              <div className="ButtonCta" style={{color: '#FCFCFD', fontSize: 22, fontWeight: '500', letterSpacing: 0.28, wordWrap: 'break-word', bottom: '20px', right: '20px'}}>Confirm</div>
             </button>
         </div>
         <img src={settings} alt="settings" className="settings"/>
