@@ -51,8 +51,6 @@ def record():
 def sendConfirmation():
     emit("display", {}, broadcast=True)
 
-<<<<<<< Updated upstream
-=======
 @app.route("/", methods=['GET'])
 def home():
     return render_template("index.html")
@@ -76,8 +74,11 @@ def police():
 @app.route("/success", methods=['GET'])
 def success():
     return render_template("success.html")
+
+@app.route("/login", methods=['GET'])
+def success():
+    return render_template("login.html")
     
 
->>>>>>> Stashed changes
 if __name__ == '__main__':
     app.run(port=5000)
