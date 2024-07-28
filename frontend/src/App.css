@@ -281,6 +281,9 @@ body{
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  position: absolute;
 }
 
 
