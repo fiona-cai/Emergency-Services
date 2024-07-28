@@ -122,3 +122,51 @@ body{
   width: 52px;
   height: 52px;
 }
+
+
+.addminus {
+  display: flex;
+  flex-direction: column;
+}
+
+.policeIcon {
+  width: 51px;
+  position:absolute;
+  top: 360px;
+  left: 451px;
+}
+
+.blueIcon {
+  width: 138px;
+  position:absolute;
+  top: 320px;
+  left: 407px;
+}
+
+.healthIcon {
+  width: 69px;
+  position:absolute;
+  top: 361px;
+  left: 648px;
+}
+
+.redIcon {
+  width: 138px;
+  position:absolute;
+  top: 320px;
+  left: 613px;
+}
+
+.fireIcon {
+  width: 60px;
+  position:absolute;
+  top: 358px;
+  left: 857px;
+}
+
+.yellowIcon {
+  width: 138px;
+  position:absolute;
+  top: 320px;
+  left: 818px;
+}	
