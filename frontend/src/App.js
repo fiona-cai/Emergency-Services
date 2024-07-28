@@ -68,9 +68,6 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
-      <div className="App">
-        <Overview data={router} />
-      </div>
     </>
   );
 }
