@@ -1,4 +1,5 @@
-let socket = io.connect("http://127.0.0.1:5000")
+const URL = process.env.NODE_ENV === 'production' ? undefined : 'http://localhost:5000';
+let socket = io.connect(URL)
 
 const onLoad = () => {
 	socket.onconnect(() => {
