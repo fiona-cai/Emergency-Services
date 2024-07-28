@@ -45,19 +45,19 @@ function App() {
     },
     {
       path: "/",
-      element: <Root/>,
+      element: <Root data={data}/>,
     },
     {
       path: "/medical",
-      element: <Medical/>,
+      element: <Medical data={data}/>,
     },
     {
       path: "/fire",
-      element: <Fire/>,
+      element: <Fire data={data}/>,
     },
     {
       path: "/police",
-      element: <Police/>,
+      element: <Police data={data}/>,
     },
     {
       path: "/success",

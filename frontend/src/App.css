@@ -84,7 +84,8 @@ body{
   font-family: 'Inter', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  margin: 0px 0px 0px 50px;
+  margin: 0px 0px 0px 100px;
+  text-align: center;
 }
 
 .rootContainer{
@@ -136,7 +137,28 @@ body{
   flex-direction: column;
 }
 
-.icon{
+.icon1{
+  position: absolute;
+  left: 125px;
+  top: 250px;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.icon2{
+  position: absolute;
+  left: 125px;
+  top: 425px;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.icon3{
+  position: absolute;
+  left: 125px;
+  top: 600px;
   width: 40px;
   height: 40px;
   margin: 10px;

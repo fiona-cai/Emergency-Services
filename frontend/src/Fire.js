@@ -5,7 +5,7 @@ import exit from './exit.png';
 import yellow from './yellow.png';
 import hydrant from './hydrant.png';
 
-function Fire() {
+function Fire({data}) {
   // display tasks here
   return (
     <>

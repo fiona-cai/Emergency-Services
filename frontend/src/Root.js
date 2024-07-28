@@ -4,7 +4,7 @@ import settings from './settings.png';
 import wave from './wave.png';
 import exit from './exit.png';
 
-function Root() {
+function Root({data}) {
   // display tasks here
   return (
     <>

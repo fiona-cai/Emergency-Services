@@ -5,7 +5,7 @@ import exit from './exit.png';
 import blue from './blue.png';
 import police from './police.png';
 
-function Police() {
+function Police({data}) {
   // display tasks here
   return (
     <>

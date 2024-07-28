@@ -9,7 +9,7 @@ import cross from './cross.png';
 import radar from './radar.png';
 
 
-function Medical() {
+function Medical({data}) {
   // display tasks here
   return (
     <>
@@ -18,14 +18,9 @@ function Medical() {
             <div className="rightContainer">
                 <p className="title"> Instructions </p>
                 <p className="title2">Based on the situation, here are some things you should do</p>
-                <p className="instructions">
-                  <img src={suitcase} alt="suitcase" className="icon"/>
-                      euhfibdjdjnw
-                </p>
-                <p className="instructions">
-                  <img src={radar} alt="radar" className="icon"/>
-                      fduhsiasjkduh
-                </p>
+                <p className="instructions" style={{"position": "absolute", "top": "260px", "left": "90px"}}>euhfibdjdjnw</p>
+                <p className="instructions" style={{"position": "absolute", "top": "435px", "left": "90px"}}>fduhsiasjkduh</p>
+                <p className="instructions" style={{"position": "absolute", "top": "610px", "left": "90px"}}>fduhsiasjkduh</p>
             </div>
         </div>
         <img src={settings} alt="settings" className="settings"/>
@@ -33,6 +28,9 @@ function Medical() {
         <img src={exit} alt="exit" className="exit"/>
         <img src={red} alt="red" className="triangle"/>
         <img src={ambulance} alt="ambulance" className="ambulance"/>
+        <img src={suitcase} alt="suitcase" className="icon1"/>
+        <img src={radar} alt="radar" className="icon2"/>
+        <img src={cross} alt="cross" className="icon3"/>
     </>
   );
 }
