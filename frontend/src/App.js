@@ -18,6 +18,7 @@ const socket = socketIO.connect('http://localhost:5000');
 function App() {
   const [data, setData] = useState(null);
   const [display, setDisplay] = useState(false);
+  
 
   // set data to received data (pass through props)
   useEffect(() => {
