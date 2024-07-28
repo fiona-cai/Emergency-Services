@@ -12,6 +12,10 @@ socket.on("send", (data) => {
     document.getElementById('polices').innerText = data.police_officers;
     document.getElementById('fires').innerText = data.firefighters;
     document.getElementById('medics').innerText = data.paramedics;
+    document.getElementById('eta').innerText = data.eta;
+    document.getElementById('location').innerText = data.location;
+    document.getElementById('crisis').innerText = data.crisis;
+    document.getElementById('severity').innerText = data.severity;
 });
 
 const onConfirm = () => {

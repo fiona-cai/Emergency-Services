@@ -368,3 +368,25 @@ body{
   height: 61px;
   margin: 0;
 }
+
+.Overview {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 50%;
+}
+
+#location {
+  font-family: 'Inter', sans-serif;
+}
+
+#crisis {
+  font-family: 'Inter', sans-serif;
+}
+
+#eta {
+  font-family: 'Inter', sans-serif;
+}
+
+#severity {
+  font-family: 'Inter', sans-serif;
+}
