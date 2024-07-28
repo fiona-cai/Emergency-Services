@@ -1,4 +1,4 @@
-const URL = window.location.hostname; //'http://localhost:5000'; // set to undefined for production
+const URL = 'http://localhost:5000'; //'http://localhost:5000'; // set to undefined for production
 let socket = io.connect(URL)
 
 const onLoad = () => {
