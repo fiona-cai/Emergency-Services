@@ -19,4 +19,5 @@ socket.on("display", () => {
     document.getElementById('instr1').innerText = loadedData.paramedics_equipment;
     document.getElementById('instr2').innerText = loadedData.paramedics_safety;
     document.getElementById('instr3').innerText = loadedData.paramedics_instructions;
+    document.getElementById('instructions').innerText = "Instructions for " + loadedData.paramedics + " units";
 })

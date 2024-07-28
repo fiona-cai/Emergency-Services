@@ -19,5 +19,6 @@ socket.on("display", () => {
     document.getElementById('instr1').innerText = loadedData.police_equipment;
     document.getElementById('instr2').innerText = loadedData.police_safety;
     document.getElementById('instr3').innerText = loadedData.police_instructions;
+    document.getElementById('instructions').innerText = "Instructions for " + loadedData.police-officers + " units";
     
 })
