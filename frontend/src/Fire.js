@@ -11,7 +11,9 @@ function Fire() {
     <>
         <div className="rootContainer">
             <div className="navbar"></div>
-            <div className="rightContainer">
+            <div className="rightContainer">                
+              <p className="title"> Instructions </p>
+              <p className="title2">Based on the situation, here are some things you should do</p>
                 
             </div>
         </div>
