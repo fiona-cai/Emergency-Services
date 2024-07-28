@@ -1,4 +1,4 @@
-const URL = process.env.NODE_ENV === 'production' ? undefined : 'http://localhost:5000';
+import URL from './url'
 let socket = io.connect(URL)
 
 const onLoad = () => {
