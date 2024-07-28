@@ -14,7 +14,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 
 from twilio.twiml.voice_response import VoiceResponse
-from twilio_transcribe import process_transcription
+# from twilio_transcribe import process_transcription
 from threading import Timer
 from flask_socketio import SocketIO, emit
 
@@ -26,6 +26,10 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 def test_connection():
     return jsonify(message="Backend connected!")
 
+
+# Method to send big data object to all clients (once finished processing data, CALL THIS)
+def sendData(data):
+    socketio.emit("send", data, broadcast=True)
 
 # this endpoint is accessed by Twilio upon a phone call
 @app.route('/call', methods=['POST'])
@@ -48,10 +52,6 @@ def sendConfirmation():
     emit("display", {}, broadcast=True)
 
     
-
-# Method to send big data object to all clients (once finished processing data, CALL THIS)
-def sendData(data):
-    socketio.emit("send", data, broadcast=True)
 
 if __name__ == '__main__':
     app.run(port=5000)
