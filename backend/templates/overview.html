@@ -1,4 +1,6 @@
 <head>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/overview.js') }}"></script>
     <link rel="stylesheet" href= "{{ url_for('static',filename='styles/style.css') }}">
 </head>
 
@@ -28,8 +30,8 @@
           <div class="Overview" id="overview">
           </div>
         </div>
-        <a href="/success">
-          <button class="button button1" style="width: 145; height: 50; padding-left: 32; padding-right: 32; padding-top: 12; padding-bottom: 12; border-radius: 8; overflow: hidden; justify-content: center; align-items: center; gap: 10; display: inline-flex; bottom: 20px; right: 20px">
+        <a >
+          <button onclick='onConfirm()' class="button button1" style="width: 145; height: 50; padding-left: 32; padding-right: 32; padding-top: 12; padding-bottom: 12; border-radius: 8; overflow: hidden; justify-content: center; align-items: center; gap: 10; display: inline-flex; bottom: 20px; right: 20px">
             <div class="ButtonCta" style="color: #FCFCFD; font-size: 22; font-weight: 500; letter-spacing: 0.28; word-wrap: break-word;">Confirm</div>
           </button>
         </a>
