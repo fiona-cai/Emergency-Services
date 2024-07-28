@@ -19,6 +19,7 @@ def process_transcription():
     if (transcription == None): 
         transcription = "help help, the fires are burning down my cottage! Send firefighters to Calgary noww!"
     print(transcription)
+    
     prompts.one_function_to_rule_them_all(transcription)
 
 
