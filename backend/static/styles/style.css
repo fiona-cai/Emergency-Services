@@ -375,18 +375,74 @@ body{
   width: 50%;
 }
 
-#location {
-  font-family: 'Inter', sans-serif;
+.locationstate{
+  position: absolute;
+  top: 550px;
+  left: 200px;
+  width: 224px;
+  height: 40px;
 }
 
-#crisis {
-  font-family: 'Inter', sans-serif;
+.severitystate{
+  position: absolute;
+  top: 650px;
+  left: 200px;
+  width: 210px;
+  height: 40px;
 }
 
-#eta {
-  font-family: 'Inter', sans-serif;
+.crisisstate{
+  position: absolute;
+  top: 550px;
+  left: 600px;
+  width: 167px;
+  height: 40px;
 }
 
-#severity {
+.etastate{
+  position: absolute;
+  top: 650px;
+  left: 600px;
+  width: 135px;
+  height: 40px;
+}
+
+.locationdescription{
   font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  position: absolute;
+  top: 535px;
+  left: 200px;
+  width: 224px;
+  height: 40px;
+}
+
+.severitydescription{
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  position: absolute;
+  top: 635px;
+  left: 200px;
+  width: 210px;
+  height: 40px;
+}
+
+.crisisdescription{
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  position: absolute;
+  top: 535px;
+  left: 600px;
+  width: 167px;
+  height: 40px;
+}
+
+.etadescription{
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  position: absolute;
+  top: 635px;
+  left: 600px;
+  width: 135px;
+  height: 40px;
 }

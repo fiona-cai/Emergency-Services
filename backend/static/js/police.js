@@ -1,4 +1,4 @@
-const URL = process.env.NODE_ENV === 'production' ? undefined : 'http://localhost:5000';
+const URL = window.location.hostname; //'http://localhost:5000'; // set to undefined for production
 let socket = io.connect(URL)
 
 const onLoad = () => {
