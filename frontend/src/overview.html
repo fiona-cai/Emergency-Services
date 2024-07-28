@@ -1,0 +1,84 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="margin: 0;">
+    <div class="rootContainer">
+        <div class="navbar"></div>
+        <div class="rightContainer">
+          <p class="title">Emergency overview</p>
+          <p class="title2">Here's a summary of the emergency.</p>
+
+          <div class='addminus'>
+          <img src="Ellipse 5.png" alt="blue" class="blueIcon" />
+          <img src="police.png" alt="police" class="policeIcon" />
+          <img src="Ellipse 7.png" alt="red" class="redIcon" />
+          <img src="ambulance.png" alt="health" class="healthIcon" />
+          <img src="Ellipse 6.png" alt="yellow" class="yellowIcon" />
+          <img src="hydrant.png" alt="fire" class="fireIcon" />
+          <img src="Group 699.png" alt="add" class="addIcon" id="addPolice"/>
+          <img src="Group 698.png" alt="minus" class="minusIcon" id="minusPolice"/>
+          <img src="Group 699.png" alt="add" class="addIcon2" id="addMedic"/>
+          <img src="Group 698.png" alt="minus" class="minusIcon2" id="minusMedic"/>
+          <img src="Group 699.png" alt="add" class="addIcon3" id="addFire"/>
+          <img src="Group 698.png" alt="minus" class="minusIcon3" id="minusFire"/>
+          <h3 class='polices' id='polices'></h3>
+          <h3 class='medics' id='medics'></h3>
+          <h3 class='fires' id='fires'></h3>
+          <div class="Overview" id="overview">
+          </div>
+        </div>
+        <a href="/success">
+          <button class="button button1" style={{width: 145, height: 50, paddingLeft: 32, paddingRight: 32, paddingTop: 12, paddingBottom: 12, borderRadius: 8, overflow: 'hidden', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex', bottom: '20px', right: '20px'}}>
+            <div class="ButtonCta" style={{color: '#FCFCFD', fontSize: 22, fontWeight: '500', letterSpacing: 0.28, wordWrap: 'break-word'}}>Confirm</div>
+          </button>
+        </a>
+    </div>
+    <img src="settings.png" alt="settings" class="settings"/>
+    <img src="location.png" alt="location" class="location"/>
+    <img src="exit.png" alt="exit" class="exit"/>
+</body>
+
+<script>
+    var polices = 0;
+    var medics = 0;
+    var fires = 0;
+    var data = {}; // replace with your data
+
+    document.getElementById('addPolice').addEventListener('click', function() {
+        polices++;
+        document.getElementById('polices').innerText = polices;
+    });
+
+    document.getElementById('minusPolice').addEventListener('click', function() {
+        polices--;
+        document.getElementById('polices').innerText = polices;
+    });
+
+    document.getElementById('addMedic').addEventListener('click', function() {
+        medics++;
+        document.getElementById('medics').innerText = medics;
+    });
+
+    document.getElementById('minusMedic').addEventListener('click', function() {
+        medics--;
+        document.getElementById('medics').innerText = medics;
+    });
+
+    document.getElementById('addFire').addEventListener('click', function() {
+        fires++;
+        document.getElementById('fires').innerText = fires;
+    });
+
+    document.getElementById('minusFire').addEventListener('click', function() {
+        fires--;
+        document.getElementById('fires').innerText = fires;
+    });
+
+    var overview = document.getElementById('overview');
+    for (var key in data) {
+        var p = document.createElement('p');
+        p.innerText = key + ': ' + data[key];
+        overview.appendChild(p);
+    }
+</script>
