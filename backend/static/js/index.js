@@ -9,5 +9,5 @@ const onLoad = () => {
 socket.on("send", (data) => {
     console.log("data has been sent and stored")
     // now put text from data into the elements
-
+    
 });

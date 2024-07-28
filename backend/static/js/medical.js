@@ -16,5 +16,7 @@ socket.on("send", (data) => {
 socket.on("display", () => {
     console.log("data has been confirmed and we are now displaying!")
     // set elements to data stuff 
-    
+    document.getElementById('instr1').innerText = loadedData.paramedics_equipment;
+    document.getElementById('instr2').innerText = loadedData.paramedics_safety;
+    document.getElementById('instr3').innerText = loadedData.paramedics_instructions;
 })

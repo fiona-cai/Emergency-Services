@@ -37,7 +37,7 @@ def connecting():
 # on confirm, tell each client to display (if ex. data.police is defined)
 @socketio.on("confirm")
 def sendConfirmation():
-    emit("display", {}, broadcast=True)
+    emit("display", broadcast=True)
 
 # PROMPT
 def officer_num(transcript, client):
@@ -306,7 +306,7 @@ def success():
     return render_template("success.html")
 
 @app.route("/login", methods=['GET'])
-def success():
+def login():
     return render_template("login.html")
     
 
