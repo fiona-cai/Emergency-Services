@@ -93,49 +93,32 @@ body{
   width: 1200px;
 }
 
-.addminus {
-  display: flex;
-  flex-direction: column;
+.triangle{
+  position: absolute;
+  top: 0px;
+  left: 1050px;
 }
 
-.policeIcon {
-  width: 51px;
-  position:absolute;
-  top: 360px;
-  left: 451px;
+.police{
+  position: absolute;
+  top: 20px;
+  left: 1210px;
+  width: 42px;
+  height: 48px;
 }
 
-.blueIcon {
-  width: 138px;
-  position:absolute;
-  top: 320px;
-  left: 407px;
+.ambulance{
+  position: absolute;
+  top: 25px;
+  left: 1205px;
+  width: 45px;
+  height: 36px;
 }
 
-.healthIcon {
-  width: 69px;
-  position:absolute;
-  top: 361px;
-  left: 648px;
-}
-
-.redIcon {
-  width: 138px;
-  position:absolute;
-  top: 320px;
-  left: 613px;
-}
-
-.fireIcon {
-  width: 60px;
-  position:absolute;
-  top: 358px;
-  left: 857px;
-}
-
-.yellowIcon {
-  width: 138px;
-  position:absolute;
-  top: 320px;
-  left: 818px;
+.hydrant{
+  position: absolute;
+  top: 20px;
+  left: 1210px;
+  width: 52px;
+  height: 52px;
 }

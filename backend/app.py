@@ -16,9 +16,11 @@ from flask_cors import CORS
 from twilio.twiml.voice_response import VoiceResponse
 from twilio_transcribe import process_transcription
 from threading import Timer
+from flask_socketio import SocketIO, emit
 
 app = Flask(__name__)
 CORS(app)
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 @app.route('/test', methods=['GET'])
 def test_connection():
@@ -39,6 +41,14 @@ def record():
     t.start()
 
     return str(response)
+
+@socketio.on("connect")
+def connect():
+    print("Connected!")
+
+# Method to send big data object to all clients (once finished processing data, CALL THIS)
+def sendData(data):
+    socketio.emit("send", data, broadcast=True)
 
 if __name__ == '__main__':
     app.run(port=5000)
