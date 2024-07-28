@@ -206,6 +206,3 @@ def one_function_to_rule_them_all(transcript):
     print(output)
 
     sendData(output)
-
-t = "help help, the fires are burning down my cottage! Send firefighters to Calgary noww!"
-a, b, c = police_instructions(t)
