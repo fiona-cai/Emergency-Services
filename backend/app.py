@@ -42,9 +42,12 @@ def record():
 
     return str(response)
 
-@socketio.on("connect")
-def connect():
-    print("Connected!")
+# on confirm, tell each client to display (if ex. data.police is defined)
+@socketio.on("confirm")
+def sendConfirmation():
+    emit("display", {}, broadcast=True)
+
+    
 
 # Method to send big data object to all clients (once finished processing data, CALL THIS)
 def sendData(data):
