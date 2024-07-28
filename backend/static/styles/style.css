@@ -320,3 +320,51 @@ body{
   background-color: #7EBD80;
   color: black;
 }
+
+.firefighters{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 490px;
+  height: 800px;
+}
+
+
+.loginContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 650px;
+  height: 100vh;
+  margin: 0px 0px 0px 120px;
+}
+
+.loginTitleContainer{
+  margin: 150px 0px 0px 0px;
+}
+
+.loginTitle{
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: -1.5%;
+}
+
+.loginSubtitle{
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -1.5%;
+  color: #4F4F4F;
+  margin: 10px;
+}
+
+.input{
+  outline: none;
+  border: black solid 1px;
+  border-radius: 7px;
+  width: 599px;
+  height: 61px;
+  margin: 0;
+}

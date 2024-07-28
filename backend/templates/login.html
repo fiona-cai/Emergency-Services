@@ -1,19 +1,25 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/style.css')}}">
 </head>
+
 <body>
-    <img src="firefighters.png" alt="firefighters" class="firefighters"/>
+    <img src="{{ url_for('static',filename='assets/firefighters.png')}}" alt="firefighters" class="firefighters"/>
+    
     <div class="loginContainer">
         <div class="loginTitleContainer">
             <span class="loginTitle">Welcome to </span><span class="loginTitle" style="color: #4EAE50">CrisisControl</span>
         </div>
         <p class="loginSubtitle">Making emergency contacts a smoother process</p>
-        <p class="loginSubtitle" style="margin-top: 70px; color: black">ID: </p>
+        <p class="loginSubtitle" style="margin-top: 50px; color: black">ID: </p>
         <form class="input"></form>
         <p class="loginSubtitle" style="margin-top: 35px; color: black">Password: </p>
         <form class="input"></form>
+        <a>
+            <button class="button button1" style="width: 145; height: 50; padding-left: 32; padding-right: 32; padding-top: 12; padding-bottom: 12; border-radius: 8; overflow: hidden; justify-content: center; align-items: center; gap: 10; display: inline-flex; bottom: 50px; left: 350px">
+                <div class="ButtonCta" style="color: #FCFCFD; font-size: 22; font-weight: 500; letter-spacing: 0.28; word-wrap: break-word;">Sign In</div>
+            </button>
+        </a>
     </div>
 </body>
 </html>
